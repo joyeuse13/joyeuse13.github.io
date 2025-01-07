@@ -73,3 +73,9 @@ rss:
     description: A blog about ML, AI, Gamedev and other random stuff that crosses my mind.
 
 # git remote add other-repo git@github.com:xxx/other-repo.git # or use a path like ../foo if you have it locally on your machine
+# git remote add source ../hiivelabs.com
+
+# git fetch source
+# git merge source/astro --allow-unrelated-histories
+
+# for file in *.md; do mv "$file" "${file%.md}.mdx"; done

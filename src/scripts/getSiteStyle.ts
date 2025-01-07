@@ -11,14 +11,14 @@ export async function getSiteStyle(): Promise<string> {
     const cssKeys = Object.keys(cssGlobs);
 
     const matchingKey = cssKeys.find(key => key.includes(site));
-    console.log(cssKeys, matchingKey);
+    // console.log(cssKeys, matchingKey);
     //const matchingKey = cssKeys.find(key => key.includes('custom'));
     if (!matchingKey) {
         console.warn(`No css found for ${site}...`);
     }
-    else {
-        console.log(`css found for ${site}...: ${matchingKey}`);
-    }
+    // else {
+    //     console.log(`css found for ${site}...: ${matchingKey}`);
+    // }
     // console.log('matchingKey', matchingKey);
     // console.log(`Reading ${site} yaml config...`);
     return await cssGlobs[matchingKey]().then(css => {
