@@ -1,0 +1,28 @@
+---
+interface Props {
+	post: any,
+}
+
+import { components } from '../../scripts/mixins/autoImportComponents';
+
+import BlueskyComments from "./BlueskyComments.astro";
+import Signature from "../Signature.astro";
+
+import getPostData from "../../scripts/getPostData";
+
+
+const post = Astro.props.post;
+const { Content, frontmatter } = post;
+const { originalFilename } = getPostData(post);
+---
+
+<article class="content" data-pagefind-body>
+    <Content components={components} />
+</article>
+{
+    frontmatter.author != null && frontmatter.author != '' &&
+    <Signature signature={frontmatter.author} />
+}
+
+<BlueskyComments filename={originalFilename} />
+<hr />

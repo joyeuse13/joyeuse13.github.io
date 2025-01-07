@@ -1,0 +1,59 @@
+---
+import {cleanUrl} from "../scripts/urlUtils";
+const { length, currentUrl, currentPage, firstUrl, prevUrl, nextUrl, lastUrl } = Astro.props;
+const paginationList = [...Array(length)].map((_, i) => 1 + i);
+---
+
+
+<nav aria-label="Blog pages" class="pagination pagination-default">
+    { firstUrl == currentUrl ? (
+            <div class="pagination-link disabled">
+                <div>❮❮</div>
+            </div>
+    ) : (
+            <div class="pagination-link">
+                <a href={cleanUrl(firstUrl)}>❮❮</a>
+            </div>
+    )}
+
+    { prevUrl ? (
+            <div class="pagination-link">
+                <a href={cleanUrl(prevUrl)}>❮</a>
+            </div>
+    ) : (
+            <div class="pagination-link disabled">
+                <div>❮</div>
+            </div>
+    )}
+
+    {
+        paginationList.map((num) => (
+                <div class={`pagination-link ${currentPage == num ? "disabled active" : ""}`}>
+                    <a href={`${cleanUrl(firstUrl)}${num == 1 ? "" : '/'+(num)}`}>
+                        {num}
+                    </a>
+                </div>
+        ))
+    }
+
+    { !nextUrl ? (
+            <div class="pagination-link disabled">
+                <div>❯</div>
+            </div>
+    ) : (
+            <div class="pagination-link">
+                <a href={cleanUrl(nextUrl)}>❯</a>
+            </div>
+    )}
+
+    { lastUrl == currentUrl ? (
+            <div class="pagination-link disabled">
+                <div>❯❯</div>
+            </div>
+    ) : (
+            <div class="pagination-link">
+                <a href={cleanUrl(lastUrl)}>❯❯</a>
+            </div>
+    )}
+
+</nav>
