@@ -11,6 +11,9 @@
     --secondary-color: #9b59b6; /* Supporting purple */
     --heading-color: #6A0DAD;
     --text-highlight-color: #4e078a; /* Darker highlight shade */
+    --text-highlight-color-alt-green: #4a5a23;
+    --text-highlight-color-alt-blue: #234a5a;
+    --text-highlight-color-alt-purple: #3e235a;
     --text-code-color: #4e078a; /* Consistent with highlight color for code elements */
     --font-family-serif: Merriweather, serif;
     --font-family-sans: 'Fira Sans', sans-serif;
@@ -31,6 +34,9 @@
     --secondary-color: #ce93d8; /* Lighter supporting purple for contrast */
     --heading-color: #9c27b0;
     --text-highlight-color: #d7b4f3; /* Lighter highlight shade for text/code */
+    --text-highlight-color-alt-green: #d8e5b3;
+    --text-highlight-color-alt-blue: #b3d8e5;
+    --text-highlight-color-alt-purple: #eed3e5;
     --text-code-color: #d7b4f3;
     --bg-quote-block: #cccccc20;
 }

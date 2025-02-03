@@ -4,8 +4,8 @@ description: |
   This post explores the process of landscape generation using Rust, focusing on a seeded expansion algorithm to ensure
   consistent chunk generation. It provides a detailed look into the methods employed for procedural terrain creation.
 author: hiive
-categories: gamedev
-tags: world-building terrain-generation procedural-generation rust roguelikes
+categories: gamedev roguelike
+tags: world-building terrain-generation procedural-generation rust
 ---
 
 Following on from my last entry, let’s go into a little more detail about how the landscape generation was done.
@@ -135,12 +135,15 @@ showing the results of a two layer generation sequence. As can be seen, the orig
 array of random byte values. *Layer 1* doubles in size to **16x16,** and *layer 2* again doubles to **32x32**.
 
 
-<LightboxGallery>
+<LightboxGallery caption="Image Gallery: Three Successive Layer Generations">
     <GalleryEntry src="/src/assets/images/hiivelabs.com/blog/layer0.png"
+                  caption="Layer 0 (8x8)"
                   alt="Layer 0 (8x8)" />
     <GalleryEntry src="/src/assets/images/hiivelabs.com/blog/layer1.png"
+                  caption="Layer 1 (16x16)"
                   alt="Layer 1 (16x16) (excl. out-of-bounds border)" />
     <GalleryEntry src="/src/assets/images/hiivelabs.com/blog/layer2.png"
+                  caption="Layer 2 (32x32)"
                   alt="Layer 2 (32x32) (excl. out-of-bounds border)" />
 </LightboxGallery>
 
