@@ -31,10 +31,10 @@
     --background-feature: #28292A;
     --text-main: #ffffff;
     --text-secondary: #cccccc;
-    --primary-color: #9c27b0; /* Main purple for dark theme */
-    --primary-color-alt: #6b0f92; /* Accent purple for dark theme */
+    --primary-color: #Ac57D0; /* Main purple for dark theme */
+    --primary-color-alt: #Ab2fA2; /* Accent purple for dark theme */
     --secondary-color: #ce93d8; /* Lighter supporting purple for contrast */
-    --heading-color: #9c27b0;
+    --heading-color: #Bc57d0;
     --text-highlight-color: #d7b4f3; /* Lighter highlight shade for text/code */
     --text-highlight-color-alt-green: #d8e5b3;
     --text-highlight-color-alt-blue: #b3d8e5;

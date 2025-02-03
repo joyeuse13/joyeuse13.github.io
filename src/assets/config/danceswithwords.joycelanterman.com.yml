@@ -35,8 +35,21 @@ navbar:
         - href: "archive"
           label: "archive"
         - href: "french-instructional-video"
-          label: "french instructional video"
-
+          label: "French Instructional Video"
+        - href: "instructional-units"
+          label: "Instructional Units"
+        - href: "lesson-plans-and-exercises"
+          label: "Lesson Plans and Exercises"
+        - href: "aclu-translation-right-to-an-interpreter"
+          label: "ACLU Translation: Right to an Interpreter"
+        - href: "professional-development-notes"
+          label: "Professional Development Notes"
+        - href: "setesol-2010-session-notes"
+          label: "SETESOL 2010 Session Notes"
+        - href: "esl-textbook-proposal"
+          label: "ESL Textbook Proposal"
+        - href: "podcast-demo"
+          label: "Podcast Demo"
 # blog path (can be posts or blog)
 # posts = src/assets/posts/...
 # blog = src/assets/blog/...
