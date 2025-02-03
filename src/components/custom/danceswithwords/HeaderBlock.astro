@@ -1,0 +1,11 @@
+---
+import SiteLogo from 'src/components/SiteLogo.astro';
+import {getSiteConfig} from "src/scripts/getSiteConfig";
+---
+
+    <SiteLogo alt={(await getSiteConfig()).main.logo.alt}
+              dark={(await getSiteConfig()).main.logo.dark}
+              light={(await getSiteConfig()).main.logo.light}
+              id="main-page-logo"
+              class="main-page-logo"/>
+

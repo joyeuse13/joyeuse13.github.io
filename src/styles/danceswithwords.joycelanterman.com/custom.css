@@ -65,6 +65,10 @@
         background-color: var(--background-feature);
     }
 
+    .bg-color-standout-background-feature {
+        background-color: var(--standout-background-feature);
+    }
+
     .bg-color-background-body {
         background-color: var(--background-body)
     }
@@ -176,6 +180,10 @@
                hover:shadow-[inset_0_-1.5em_0_var(--primary-color-alt)]
     }
 
+    a, .highlight-link {
+        @apply color-text-highlight-color;
+    }
+
     p,
     ul,
     ol {
@@ -209,6 +217,10 @@
 @layer components {
     div.container {
         @apply pt-4;
+        li {
+            @apply list-disc;
+            @apply my-1;
+        }
     }
 
     .underline-link-hover {

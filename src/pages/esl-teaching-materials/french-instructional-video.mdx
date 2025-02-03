@@ -1,0 +1,36 @@
+---
+title: ESL Teaching Materials
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import HeaderBlock from '../../components/custom/danceswithwords/HeaderBlock.astro';
+import { YouTube } from '@astro-community/astro-embed-youtube';
+
+<BaseLayout title={frontmatter.title} current="/esl-teaching-materials">
+    <HeaderBlock />
+
+    # French Instructional Video
+
+    The following video was created by myself and four classmates (Betùl Bal, Francisco Barrón, Lauren Larsen, and Janet
+    Randall) in spring of 2010 for Technology in the ESL Classroom, taught by Dr. Eric Friginal, at GA State University.
+
+    The target audience for the video is a class of low-intermediate level students for French as a foreign language.
+    It features interviews with speakers from several Francophonic countries, with the purpose of raising students'
+    awareness of both the diversity of the French language, and the socio-cultural status of French in the different
+    regions of the French-speaking world.
+
+    Pedagogical possibilities for using the video in a classroom include:
+        - Listening comprehension exercises
+        - Presentation of communicative functions such as introductions and descriptions
+        - Introduction to a learning unit about French language and culture
+
+    ---
+
+    ## Français Partout - Part 1
+
+    <YouTube id="coYYmrMDetc" class="mx-auto mb-8" />
+
+    ## Français Partout - Part 2
+
+    <YouTube id="5ShgIVJjbbc" class="mx-auto" />
+
+</BaseLayout>

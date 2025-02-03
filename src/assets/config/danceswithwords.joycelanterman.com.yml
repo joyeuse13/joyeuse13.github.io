@@ -9,8 +9,8 @@ main:
 navbar:
     # navbar logo setup
     logo:
-      dark: "/src/assets/images/worddancer.joycelanterman.com/nav-logo.png"
-      light: "/src/assets/images/worddancer.joycelanterman.com/nav-logo.png"
+      dark: "/src/assets/images/worddancer.joycelanterman.com/nav-logo-dark.png"
+      light: "/src/assets/images/worddancer.joycelanterman.com/nav-logo-light.png"
       alt: "Dances with Words - Joyce Lanterman"
     left:
       -
@@ -32,6 +32,7 @@ navbar:
         - "[slug]"
   #      - "[...page]"
         - "archive"
+        - "french-instructional-video"
 
 # blog path (can be posts or blog)
 # posts = src/assets/posts/...

@@ -1,6 +1,6 @@
 @layer components {
     /* index page logo */
     .main-page-logo {
-        @apply mx-auto my-8 w-[60hmin];
+        @apply mx-auto my-4 w-[60hmin];
     }
 }

@@ -22,7 +22,9 @@ const { title, description, permalink, current } = Astro.props;
   <div class="layout min-h-full">
     <Header current={current} />
     <main>
+      <div class="container">
       <slot />
+      </div>
     </main>
 
     <Footer />
