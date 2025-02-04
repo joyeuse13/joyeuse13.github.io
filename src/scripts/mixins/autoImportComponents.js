@@ -8,7 +8,7 @@ import SteamLink from "../../components/links/SteamLink.astro";
 import WikiLink from "../../components/links/WikiLink.astro";
 import BlueskyLink from "../../components/links/BlueskyLink.astro";
 import GithubLink from "../../components/links/GithubLink.astro";
-import HeaderBlock from "../../components/custom/danceswithwords/HeaderBlock.astro";
+import MainLogo from '../../components/MainLogo.astro';
 
 export const components = {
     GalleryEntry,
@@ -20,6 +20,6 @@ export const components = {
     WikiLink,
     BlueskyLink,
     GithubLink,
-    HeaderBlock,
+    MainLogo,
     HiiveLabsText: HiiveLabs
 };
