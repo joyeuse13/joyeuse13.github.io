@@ -150,6 +150,9 @@
         content: "▪ "; /* Optional: Custom marker content */
     }
 
+    em {
+        @apply color-text-highlight-color;
+    }
     /* specific header overrides */
     h1 {
         @apply text-5xl font-extrabold pt-2;
@@ -228,17 +231,21 @@
 
 @layer components {
     div.container {
-        @apply pt-2 mt-6 pl-3 pr-2;
+        @apply pt-2 mt-6 pl-3 pr-2 lg:pl-8 lg:pr-4;
         ul > li {
             @apply list-disc;
-            @apply my-1;
+            @apply my-0;
+
         }
         ol > li {
             @apply list-decimal;
-            @apply my-1;
+            @apply my-0;
+        }
+        li > p {
+            @apply my-0;
         }
         ol, ul {
-            @apply pt-4 pb-8;
+            @apply pb-2;
         }
         @apply max-w-[1024px];
         @apply border-gray-700 border;
