@@ -10,6 +10,7 @@ import SteamLink from "../../components/links/SteamLink.astro";
 import WikiLink from "../../components/links/WikiLink.astro";
 import BlueskyLink from "../../components/links/BlueskyLink.astro";
 import GithubLink from "../../components/links/GithubLink.astro";
+import FaviconLink from "../../components/links/FaviconLink.astro";
 import EmbeddedYouTube from "../../components/EmbeddedYouTube.astro";
 import MainLogo from '../../components/MainLogo.astro';
 
@@ -25,6 +26,7 @@ export const components = {
     WikiLink,
     BlueskyLink,
     GithubLink,
+    FaviconLink,
     EmbeddedYouTube,
     MainLogo,
     HiiveLabsText: HiiveLabs
