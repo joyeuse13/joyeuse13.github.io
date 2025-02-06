@@ -2,8 +2,9 @@
 title: French Instructional Video
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+
+import EmbeddedYouTube from '../../components/EmbeddedYouTube.astro';
 import MainLogo from '../../components/MainLogo.astro';
-import { YouTube } from '@astro-community/astro-embed-youtube';
 
 <BaseLayout title={frontmatter.title} current="/academic-materials">
     <MainLogo />
@@ -27,10 +28,10 @@ import { YouTube } from '@astro-community/astro-embed-youtube';
 
     ## Français Partout - Part 1
 
-    <YouTube id="coYYmrMDetc" class="mx-auto mb-8" />
+    <EmbeddedYouTube youtubeId="coYYmrMDetc" caption="Français Partout - Part 1" />
 
     ## Français Partout - Part 2
 
-    <YouTube id="5ShgIVJjbbc" class="mx-auto" />
+    <EmbeddedYouTube youtubeId="5ShgIVJjbbc" caption="Français Partout - Part 1" />
 
 </BaseLayout>

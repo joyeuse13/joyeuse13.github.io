@@ -3,7 +3,7 @@ main:
   logo:
     dark: "/src/assets/images/worddancer.joycelanterman.com/main-logo.png"
     light: "/src/assets/images/worddancer.joycelanterman.com/main-logo.png"
-    alt: "Dances with Words - Joyce Lanterman"
+    alt: "Dances with Words - Joyce Lanterman, ESL/Citizenship Instructor"
 
 # navbar setup
 navbar:
@@ -11,7 +11,7 @@ navbar:
     logo:
       dark: "/src/assets/images/worddancer.joycelanterman.com/nav-logo-dark.png"
       light: "/src/assets/images/worddancer.joycelanterman.com/nav-logo-light.png"
-      alt: "Dances with Words - Joyce Lanterman"
+      alt: "Dances with Words - Joyce Lanterman, ESL/Citizenship Instructor"
     left:
       -
         href: "/esl-teaching-materials"
@@ -42,8 +42,14 @@ navbar:
           label: "Lesson Plans and Exercises"
         - href: "aclu-translation-right-to-an-interpreter"
           label: "ACLU Translation: Right to an Interpreter"
-        - href: "professional-development-notes"
-          label: "Professional Development Notes"
+        - href: "professional-development-reflections-second-life"
+          label: "Professional Development Reflections - EFL In Second Life"
+        - href: "professional-development-reflections-dragoncon"
+          label: "Professional Development Reflections - Science Fiction in Translation"
+        - href: "professional-development-reflections-drama"
+          label: "Professional Development Reflections - Teaching Foreign Language Through Drama"
+        - href: "professional-development-reflections-keynote"
+          label: "Professional Development Reflections - Keynote Speech - Geoffrey Pullum"
         - href: "setesol-2010-session-notes"
           label: "SETESOL 2010 Session Notes"
         - href: "esl-textbook-proposal"

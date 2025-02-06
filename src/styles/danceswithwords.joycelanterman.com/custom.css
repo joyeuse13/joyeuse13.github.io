@@ -127,7 +127,9 @@
     body {
         @apply text-xs leading-normal;
         @apply bg-color-background-body color-text-main;
-        @apply bg-repeat bg-[url:var(--background-image)];
+        /*@apply bg-repeat-y bg-contain bg-[url:var(--background-image)];*/
+        /*@apply bg-[linear-gradient(to_right,rgba(0,15,33,1.0),rgba(47,22,20,1.0))];*/
+        @apply bg-[linear-gradient(to_right,var(--bg-gradient-start),var(--bg-gradient-end))];
         @apply font-family-serif;
     }
 
@@ -174,13 +176,15 @@
     }
 
     h6 {
-        @apply text-[1.2rem];
+        @apply text-[1.2rem] normal-case;
     }
 
-    p a, article a {
-        @apply transition-shadow ease-linear delay-150
+    p a, article a, ul a {
+        @apply transition ease-linear delay-150
                shadow-[inset_0_-0.12em_0_var(--primary-color-alt)]
                hover:shadow-[inset_0_-1.5em_0_var(--primary-color-alt)]
+               hover:color-text-main;
+
     }
 
     a, .highlight-link {
@@ -191,6 +195,10 @@
     ul,
     ol {
         @apply text-base leading-7;
+    }
+
+    ol {
+        @apply list-decimal;
     }
 
     p {
@@ -215,15 +223,28 @@
         @apply text-xs p-1;
     }
 
+
 }
 
 @layer components {
     div.container {
-        @apply pt-4;
-        li {
+        @apply pt-2 mt-6;
+        ul > li {
             @apply list-disc;
             @apply my-1;
         }
+        ol > li {
+            @apply list-decimal;
+            @apply my-1;
+        }
+        ol, ul {
+            @apply pt-4 pb-8;
+        }
+        @apply max-w-[1024px];
+        @apply border-gray-700 border;
+        @apply min-h-[50vw];
+        @apply bg-[var(--container-background-feature)];
+        @apply relative top-10;
     }
 
     .underline-link-hover {
@@ -235,4 +256,41 @@
         hover:scale-x-100;
     }
 
+    .lightbox-image, .lightbox-gallery {
+        @apply m-4 max-w-[80%] w-fit;
+    }
+    .lightbox-image {
+        @apply border border-gray-500 rounded-sm lg:rounded-lg;
+    }
+    .lightbox-image-gallery-caption {
+        @apply max-sm:hidden;
+        @apply text-xs color-text-secondary opacity-80;
+        @apply text-nowrap text-left italic;
+        @apply ml-[18px] lg:ml-5;
+        /*@apply relative -top-3 */ /* if caption is below image */
+        @apply relative top-3; /* if caption is above image */
+    }
+
+    .lightbox-caption {
+        @apply text-xs color-text-secondary opacity-80;
+        @apply text-nowrap text-left italic;
+        @apply ml-[18px] lg:ml-5;
+        @apply relative -top-3; /* if caption is below image */
+    }
+
+    .lightbox-gallery {
+        @apply min-w-[50%];
+        /*@apply bg-red-600;*/
+    }
+    .lightbox-gallery-caption {
+        @apply text-xs lg:text-sm color-text-secondary opacity-70;
+        @apply text-nowrap text-left;
+        @apply ml-4 relative -top-6 left-4
+        /*@apply text-center lg:-left-4;*/
+        /*@apply bg-yellow-400;*/
+    }
+
+    #more-controls {
+        @apply border-y-2 border-gray-500 border-opacity-25;
+    }
 }

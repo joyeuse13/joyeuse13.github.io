@@ -1,10 +1,13 @@
 :root {
     --background-image: url('/src/assets/images/worddancer.joycelanterman.com/bodybg-light.jpg');
+    --bg-gradient-start: rgba(217, 236, 255, 1.0);
+    --bg-gradient-end: rgba(253, 189, 181, 1.0);
     --nav-background-image: url('/src/assets/images/worddancer.joycelanterman.com/wrapper-light.jpg');
     --background-body: #f2f2f5; /* Light greyish with a subtle purple undertone */
     --standout-background-feature: #FFFFFF;
-    --background-feature: #faf9fc;
-    --text-main: #36393b;
+    --container-background-feature: #FFFFFFCF;
+    --background-feature: #faf9fcC0;
+    --text-main: #26292b;
     --text-secondary: #6b6f72;
     --primary-color: #6A0DAD; /* Main purple */
     --primary-color-alt: #AA4BF2; /* Accent purple */
@@ -25,10 +28,13 @@
 
 :root.theme-dark {
     --background-image: url('/src/assets/images/worddancer.joycelanterman.com/bodybg-dark.jpg');
+    --bg-gradient-start: rgba(0, 15, 33, 1.0);
+    --bg-gradient-end: rgba(47, 22, 20, 1.0);
     --nav-background-image: url('/src/assets/images/worddancer.joycelanterman.com/wrapper-dark.jpg');
     --background-body: #1e1d24; /* Dark with subtle purple tones */
     --standout-background-feature: #000000;
-    --background-feature: #28292A;
+    --container-background-feature: #0000007F;
+    --background-feature: #28292AC0;
     --text-main: #ffffff;
     --text-secondary: #cccccc;
     --primary-color: #Ac57D0; /* Main purple for dark theme */
