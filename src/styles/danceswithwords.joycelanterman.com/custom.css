@@ -228,7 +228,7 @@
 
 @layer components {
     div.container {
-        @apply pt-2 mt-6;
+        @apply pt-2 mt-6 pl-3 pr-2;
         ul > li {
             @apply list-disc;
             @apply my-1;
@@ -291,6 +291,6 @@
     }
 
     #more-controls {
-        @apply border-y-2 border-gray-500 border-opacity-25;
+        @apply border-b-2 border-gray-500 border-opacity-25;
     }
 }
