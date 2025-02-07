@@ -3,21 +3,22 @@ title: Instructional Units
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import MainLogo from '../../components/MainLogo.astro';
+import SimpleLink from '../../components/links/SimpleLink.astro';
 
 <BaseLayout title={frontmatter.title} current="/esl-teaching-materials">
     <MainLogo />
 
     # Teaching Materials
     ### Instructional Units
-    - [Mommy/Baby Time](/instructional-units/mommy_baby_time_lesson_plans_best.xls):
+    - <SimpleLink href="/instructional-units/mommy_baby_time_lesson_plans_best.xls">Mommy/Baby Time</SimpleLink>:
         A Preschool Curriculum for Refugee Children and Their Parents
-    - [ESL for US Citizenship](/instructional-units/lanterman_joyce_approaches_project_esl_for_us_citizenship_fall_08.doc):
+    - <SimpleLink href="/instructional-units/lanterman_joyce_approaches_project_esl_for_us_citizenship_fall_08.doc">ESL for US Citizenship</SimpleLink>:
         A Content- and Task-Based Curriculum for Naturalization
-    - [Good Enough to Eat](/instructional-units/lanterman_ulearn_final.doc):
+    - <SimpleLink href="/instructional-units/lanterman_ulearn_final.doc">Good Enough to Eat</SimpleLink>:
         A Theme-Based Distance Learning Module for ESL
 
     - #### ESL Pronunciation Teaching Workshop
-        - [Materials and Documentation](/instructional-units/lanterman_j_pronunciation_teaching_workshop_8320_fall_2011_final.doc)
+        - <SimpleLink href="/instructional-units/lanterman_j_pronunciation_teaching_workshop_8320_fall_2011_final.doc">Materials and Documentation</SimpleLink>
         - Slides ***TODO***
 
 </BaseLayout>

@@ -182,7 +182,7 @@
         @apply text-[1.2rem] normal-case;
     }
 
-    p a, article a, ul a {
+    p a, article a, .container a, ul a {
         @apply transition ease-linear delay-150
                shadow-[inset_0_-0.12em_0_var(--primary-color-alt)]
                hover:shadow-[inset_0_-1.5em_0_var(--primary-color-alt)]
@@ -196,7 +196,8 @@
 
     p,
     ul,
-    ol {
+    ol,
+    .container a {
         @apply text-base leading-7;
     }
 
