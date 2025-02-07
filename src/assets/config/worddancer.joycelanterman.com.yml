@@ -11,7 +11,7 @@ navbar:
     logo:
       dark: "/src/assets/images/worddancer.joycelanterman.com/nav-logo-dark.png"
       light: "/src/assets/images/worddancer.joycelanterman.com/nav-logo-light.png"
-      alt: "Dantces with Words - Joyce Lanterman, ESL/Citizenship Instructor"
+      alt: "Dances with Words - Joyce Lanterman, ESL/Citizenship Instructor"
     left:
       -
         href: "/esl-teaching-materials"
@@ -24,7 +24,7 @@ navbar:
         label: "Academic Work"
     right:
       -
-        href: "/contact-us"
+        href: "/contact"
         label: "Contact Me"
     breadcrumbs:
       include: true
