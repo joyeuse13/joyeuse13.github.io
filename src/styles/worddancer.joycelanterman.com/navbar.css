@@ -25,7 +25,7 @@
         }
 
         .selected::before {
-            @apply scale-x-100 bg-color-primary-color;
+            @apply lg:scale-x-100 bg-color-primary-color;
         }
 
 
