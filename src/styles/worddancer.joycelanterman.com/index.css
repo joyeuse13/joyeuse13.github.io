@@ -1,6 +1,14 @@
 @layer components {
+    :root {
+        --fader-height: 256px;
+        --image-offset: 7px;
+    }
     /* index page logo */
     .main-page-logo {
-        @apply mx-auto my-4 w-[60hmin];
+        @apply mx-auto mb-4 w-[60hmin];
+        @apply relative -top-[var(--image-offset)];
+        -webkit-mask-image: linear-gradient(to bottom, transparent 0%, white 5%, white 95%, transparent 100%);
+        mask-image: linear-gradient(to bottom, transparent 0%, white 5%, white 95%, transparent 100%);
     }
+
 }

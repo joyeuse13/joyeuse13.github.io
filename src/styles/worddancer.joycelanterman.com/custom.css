@@ -249,7 +249,7 @@
             @apply pb-2;
         }
         @apply max-w-[1024px];
-        @apply border-gray-700 border;
+        @apply border-gray-700 border rounded-lg;
         @apply min-h-[50vw];
         @apply bg-[var(--container-background-feature)];
         @apply relative top-10;
