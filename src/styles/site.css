@@ -96,7 +96,7 @@
 
             .theme-toggle {
                 /*border-radius: 99em;*/
-                @apply inline-flex items-center py-1 px-2 ml-2 gap-2 rounded-full;
+                @apply inline-flex items-end py-1 pl-6 lg:px-2 ml-2 gap-1 lg:gap-2 rounded-full;
 
                 .checked {
                     @apply opacity-100;
