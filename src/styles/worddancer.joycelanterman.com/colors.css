@@ -1,4 +1,5 @@
 :root {
+    --theme-color: #FFFFFFA0;
     --background-image: url('/src/assets/images/worddancer.joycelanterman.com/bodybg-light.jpg');
     --bg-gradient-start: rgba(217, 236, 255, 1.0);
     --bg-gradient-end: rgba(253, 189, 181, 1.0);
@@ -27,6 +28,7 @@
 }
 
 :root.theme-dark {
+    --theme-color: #000000A0;
     --background-image: url('/src/assets/images/worddancer.joycelanterman.com/bodybg-dark.jpg');
     --bg-gradient-start: rgba(0, 15, 33, 1.0);
     --bg-gradient-end: rgba(47, 22, 20, 1.0);
