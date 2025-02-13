@@ -52,6 +52,11 @@ footer:
 bluesky:
     include: false
     hashtag_link: /categories/#[HASHTAG]
+    auto_post_text: (This is an automated post.)
+
+facebook:
+  include: false
+  app_id: APP_ID
 
 # tag/category information
 tags_and_categories:
