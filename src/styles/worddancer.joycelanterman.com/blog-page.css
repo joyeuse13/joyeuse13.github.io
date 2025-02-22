@@ -117,6 +117,24 @@
         }
 
 
+        .lightbox-caption {
+            @apply text-xs color-text-secondary opacity-80;
+            @apply text-nowrap text-left italic;
+            @apply ml-[18px] lg:ml-5;
+            @apply relative -top-3; /* if caption is below image */
+        }
+
+        .lightbox-gallery {
+            @apply min-w-[50%];
+            /*@apply bg-red-600;*/
+        }
+        .lightbox-gallery-caption {
+            @apply text-xs lg:text-sm color-text-secondary opacity-70;
+            @apply text-nowrap text-left;
+            @apply ml-4 relative -top-6 left-4
+            /*@apply text-center lg:-left-4;*/
+            /*@apply bg-yellow-400;*/
+        }
 
         /* quote blocks */
         .quote-block {
@@ -128,8 +146,8 @@
 
         /* checklist css */
         div.checklist {
-            @apply border-gray-500 border-2;
-            @apply bg-gray-500 bg-opacity-15;
+            @apply border-[var(--background-mid)] border-2;
+            @apply bg-[var(--background-mid)] bg-opacity-15;
             @apply px-8 my-4 pb-4;
             p {
                 @apply font-family-monospace;
@@ -169,7 +187,7 @@
             --th-background: #40404080;
             @apply bg-[var(--th-background)];
             @apply font-extrabold text-base text-left;
-            @apply border border-gray-500;
+            @apply border border-[var(--background-mid)];
             @apply py-1 px-4;
         }
 
@@ -185,7 +203,7 @@
 
         div.data-table td {
             @apply py-2 px-4;
-            @apply border border-gray-500;
+            @apply border border-[var(--background-mid)];
         }
 
         /* END table styles */

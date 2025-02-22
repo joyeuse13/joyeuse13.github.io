@@ -5,9 +5,13 @@ import LightboxImage from "../../components/gallery/LightboxImage.astro";
 import LightboxVideo from "../../components/gallery/LightboxVideo.astro";
 import ContentWarning from "../../components/posts/ContentWarning.astro";
 import FormattedDate from "../../components/FormattedDate.astro";
-import HiiveLabs from "../../components/custom/hiivelabs/HiiveLabs.astro";
 import EmbeddedYouTube from "../../components/EmbeddedYouTube.astro";
 import MainLogo from '../../components/MainLogo.astro';
+
+import Timeline from "../../components/timeline/Timeline.astro";
+import TimelineEntry from "../../components/timeline/TimelineEntry.astro";
+
+import HiiveLabs from "../../components/custom/hiivelabs/HiiveLabs.astro";
 
 export const components = {
     GalleryImage,
@@ -18,6 +22,8 @@ export const components = {
     ContentWarning,
     FormattedDate,
     EmbeddedYouTube,
+    Timeline,
+    TimelineEntry,
     MainLogo,
     HiiveLabsText: HiiveLabs
 };

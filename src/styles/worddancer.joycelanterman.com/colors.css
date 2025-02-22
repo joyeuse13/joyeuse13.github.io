@@ -1,4 +1,5 @@
 :root {
+    --tw-bg-opacity: 1.0;
     --theme-color: #FFFFFFA0;
     --background-image: url('/src/assets/images/worddancer.joycelanterman.com/bodybg-light.jpg');
     --bg-gradient-start: rgba(217, 236, 255, 1.0);
@@ -8,6 +9,7 @@
     --standout-background-feature: #FFFFFF;
     --container-background-feature: #FFFFFFCF;
     --background-feature: #faf9fc;
+    --background-mid: rgb(208 208 208 / var(--tw-bg-opacity, 1) );
     --text-main: #26292b;
     --text-secondary: #6b6f72;
     --primary-color: #6A0DAD; /* Main purple */
@@ -25,15 +27,18 @@
     --font-family-sans-alt: "Roboto", sans-serif;
     --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     --bg-quote-block: #00000020;
+    --hiive-green: 00 100 00; /* Dark Green */
 }
 
 :root.theme-dark {
+    --tw-bg-opacity: 1.0;
     --theme-color: #000000A0;
     --background-image: url('/src/assets/images/worddancer.joycelanterman.com/bodybg-dark.jpg');
     --bg-gradient-start: rgba(0, 15, 33, 1.0);
     --bg-gradient-end: rgba(47, 22, 20, 1.0);
     --nav-background-image: url('/src/assets/images/worddancer.joycelanterman.com/wrapper-dark.jpg');
     --background-body: #1e1d24; /* Dark with subtle purple tones */
+    --background-mid: rgb(64 64 64 / var(--tw-bg-opacity, 1) );
     --standout-background-feature: #000000;
     --container-background-feature: #0000007F;
     --background-feature: #28292A;
@@ -49,4 +54,5 @@
     --text-highlight-color-alt-purple: #eed3e5;
     --text-code-color: #d7b4f3;
     --bg-quote-block: #cccccc20;
+    --hiive-green: 00 204 00; /* Light Green */
 }
