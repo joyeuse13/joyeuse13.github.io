@@ -1,5 +1,8 @@
 :root {
     --tw-bg-opacity: 1.0;
+    --tw-text-opacity: 1.0;
+    --tw-border-opacity: 1.0;
+
     --theme-color: 255 255 255 160;
     --background-image: url('/src/assets/images/worddancer.joycelanterman.com/bodybg-light.jpg');
     --bg-gradient-start: rgba(217, 236, 255, 1.0);
@@ -34,6 +37,9 @@
 
 :root.theme-dark {
     --tw-bg-opacity: 1.0;
+    --tw-text-opacity: 1.0;
+    --tw-border-opacity: 1.0;
+
     --theme-color: 0 0 0 160; /* #000000A0 → (0, 0, 0, A0(hex)=160) */
     --background-image: url('/src/assets/images/worddancer.joycelanterman.com/bodybg-dark.jpg');
     --bg-gradient-start: rgba(0, 15, 33, 1.0);
