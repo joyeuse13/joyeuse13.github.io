@@ -1,0 +1,14 @@
+{
+  "dark": {
+    "default": {
+      "src": "/src/assets/images/worddancer.joycelanterman.com/nav-logo-dark.png",
+      "alt": "Dances with Words - Joyce Lanterman, ESL/Citizenship Instructor"
+    }
+  },
+  "light": {
+    "default": {
+      "src": "/src/assets/images/worddancer.joycelanterman.com/nav-logo-light.png",
+      "alt": "Dances with Words - Joyce Lanterman, ESL/Citizenship Instructor"
+    }
+  }
+}

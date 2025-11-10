@@ -1,9 +1,8 @@
 # main page logo
 main:
   logo:
-    dark: "/src/assets/images/worddancer.joycelanterman.com/main-logo.png"
-    light: "/src/assets/images/worddancer.joycelanterman.com/main-logo.png"
     alt: "Dances with Words - Joyce Lanterman, ESL/Citizenship Instructor"
+    dynamic_dir: /src/assets/images/worddancer.joycelanterman.com/logos/dynamic
 
 # navbar setup
 navbar:
