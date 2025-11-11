@@ -10,7 +10,7 @@ navbar:
   left:
     - href: /esl-teaching-materials
       label: ESL Teaching Materials
-    - href: us-civics-and-history
+    - href: /us-civics-and-history
       label: US CIvics and History
     - href: /academic-work
       label: Academic Work
