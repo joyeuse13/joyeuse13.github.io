@@ -1,86 +1,58 @@
-# main page logo
 main:
   logo:
-    alt: "Dances with Words - Joyce Lanterman, ESL/Citizenship Instructor"
+    alt: Dances with Words - Joyce Lanterman, ESL/Citizenship Instructor
     dynamic_dir: /src/assets/images/worddancer.joycelanterman.com/logos/dynamic
-
-# navbar setup
 navbar:
-    # navbar logo setup
-    logo:
-      dark: "/src/assets/images/worddancer.joycelanterman.com/nav-logo-dark.png"
-      light: "/src/assets/images/worddancer.joycelanterman.com/nav-logo-light.png"
-      alt: "Dances with Words - Joyce Lanterman, ESL/Citizenship Instructor"
-    left:
-      -
-        href: "/esl-teaching-materials"
-        label: "ESL Teaching Materials"
-      -
-        href: "/us-civics-and-history"
-        label: "US Civics and History"
-      -
-        href: "/academic-work"
-        label: "Academic Work"
-    right:
-      -
-        href: "/contact"
-        label: "Contact Me"
-    breadcrumbs:
-      include: true
-      valid_breadcrumbs:
-        - href: "[slug]"
-          label: "[slug]"
-  #      - "[...page]"
-
-# blog path (can be posts or blog)
-# posts = src/assets/posts/...
-# blog = src/assets/blog/...
+  logo:
+    dark: /src/assets/images/worddancer.joycelanterman.com/nav-logo-dark.png
+    light: /src/assets/images/worddancer.joycelanterman.com/nav-logo-light.png
+    alt: Dances with Words - Joyce Lanterman, ESL/Citizenship Instructor
+  left:
+    - href: /esl-teaching-materials
+      label: ESL Teaching Materials
+    - href: us-civics-and-history
+      label: US CIvics and History
+    - href: /academic-work
+      label: Academic Work
+  right:
+    - href: /contact
+      label: contact us
+  breadcrumbs:
+    include: true
+    valid_breadcrumbs:
+      - href: '[slug]'
+        label: '[slug]'
 blog:
   pagination_size: 10
   path: posts
   prefix: blog/
   small_mode: card
   large_mode: card
-# footer setup
 footer:
-    content:
-        - "Dances with Words and its logo are trademarks of Joyce Lanterman."
-        - "All content © 2005-[CURRENT_YEAR] by Joyce Lanterman."
-
-# include bluesky
+  content:
+    - Dances with Words and its logo are trademarks of Joyce Lanterman.
+    - All content © 2005-[CURRENT_YEAR] by Joyce Lanterman.
 bluesky:
-    include: false
-    hashtag_link: /categories/#[HASHTAG]
-    auto_post_text: (This is an automated post.)
-
+  include: false
+  hashtag_link: /categories/#[HASHTAG]
+  auto_post_text: (This is an automated post.)
 facebook:
   include: false
   app_id: APP_ID
-
-# tag/category information
 tags_and_categories:
-    aliases:
-        machine-learning:
-            - ml
-        artificial-intelligence:
-            - ai
-        large-language-model:
-            - llm
-        reinforcement-learning:
-            - rl
+  aliases:
+    machine-learning:
+      - ml
+    artificial-intelligence:
+      - ai
+    large-language-model:
+      - llm
+    reinforcement-learning:
+      - rl
 search:
   include: true
-
 rss:
   include: true
   site:
     name: hiivelabs Blog
     description: A blog about ML, AI, Gamedev and other random stuff that crosses my mind.
-
-# git remote add other-repo git@github.com:xxx/other-repo.git # or use a path like ../foo if you have it locally on your machine
-# git remote add source ../hiivelabs.com
-
-# git fetch source
-# git merge source/astro --allow-unrelated-histories
-
-# for file in *.md; do mv "$file" "${file%.md}.mdx"; done
