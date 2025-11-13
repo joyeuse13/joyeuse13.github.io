@@ -2,6 +2,11 @@ main:
   logo:
     alt: Dances with Words - Joyce Lanterman, ESL/Citizenship Instructor
     dynamic_dir: /src/assets/images/worddancer.joycelanterman.com/logos/dynamic
+build:
+  exclude_from_production:
+    - admin
+    - api
+    - edit
 navbar:
   logo:
     dark: /src/assets/images/worddancer.joycelanterman.com/nav-logo-dark.png
@@ -54,5 +59,5 @@ search:
 rss:
   include: true
   site:
-    name: hiivelabs Blog
-    description: A blog about ML, AI, Gamedev and other random stuff that crosses my mind.
+    name: worddancer Blog
+    description: A blog about words, among other things.
